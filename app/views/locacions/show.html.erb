@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @locacion.nombre %>
+</p>
+
+<p>
+  <b>Imagen:</b>
+  <%= @locacion.imagen %>
+</p>
+
+<p>
+  <b>Distancia:</b>
+  <%= @locacion.distancia %>
+</p>
+
+
+<%= link_to 'Edit', edit_locacion_path(@locacion) %> |
+<%= link_to 'Back', locacions_path %>

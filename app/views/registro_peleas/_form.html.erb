@@ -1,0 +1,41 @@
+<%= form_for(@registro_pelea) do |f| %>
+  <% if @registro_pelea.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registro_pelea.errors.count, "error") %> prohibited this registro_pelea from being saved:</h2>
+
+      <ul>
+      <% @registro_pelea.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :personaje_id %><br />
+    <%= f.number_field :personaje_id %>
+  </div>
+  <div class="field">
+    <%= f.label :personaje_enemigo_id %><br />
+    <%= f.number_field :personaje_enemigo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ganador_id %><br />
+    <%= f.number_field :ganador_id %>
+  </div>
+  <div class="field">
+    <%= f.label :perdedor_id %><br />
+    <%= f.number_field :perdedor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :danio_ganador %><br />
+    <%= f.number_field :danio_ganador %>
+  </div>
+  <div class="field">
+    <%= f.label :danio_perdedor %><br />
+    <%= f.number_field :danio_perdedor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  ataque: 1
+  defenza: 1
+  dureza: 1
+  nivel: 1
+  especie: 1
+  valor: 1
+  imagen: MyString
+
+two:
+  nombre: MyString
+  ataque: 1
+  defenza: 1
+  dureza: 1
+  nivel: 1
+  especie: 1
+  valor: 1
+  imagen: MyString

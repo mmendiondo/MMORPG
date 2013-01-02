@@ -1,4 +1,34 @@
 MMORPG::Application.routes.draw do
+  resources :tipo_items
+
+
+  resources :tipo_personajes
+
+
+  resources :personaje_misions
+
+
+  resources :registro_peleas
+
+
+  resources :mision_misions
+
+
+  resources :misions
+
+
+  resources :personaje_items
+
+
+  resources :locacions
+
+
+  resources :items
+
+
+  resources :personajes
+
+
   resources :usuarios
 
 

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id personaje:</b>
+  <%= @registro_pelea.personaje_id %>
+</p>
+
+<p>
+  <b>Id personaje enemigo:</b>
+  <%= @registro_pelea.personaje_enemigo_id %>
+</p>
+
+<p>
+  <b>Id ganador:</b>
+  <%= @registro_pelea.ganador_id %>
+</p>
+
+<p>
+  <b>Id perdedor:</b>
+  <%= @registro_pelea.perdedor_id %>
+</p>
+
+<p>
+  <b>Danio ganador:</b>
+  <%= @registro_pelea.danio_ganador %>
+</p>
+
+<p>
+  <b>Danio perdedor:</b>
+  <%= @registro_pelea.danio_perdedor %>
+</p>
+
+
+<%= link_to 'Edit', edit_registro_pelea_path(@registro_pelea) %> |
+<%= link_to 'Back', registro_peleas_path %>

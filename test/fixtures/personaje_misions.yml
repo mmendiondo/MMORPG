@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  personaje_id: MyString
+  mision_id: MyString
+  finalizada: 1
+
+two:
+  personaje_id: MyString
+  mision_id: MyString
+  finalizada: 1

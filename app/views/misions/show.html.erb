@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @mision.nombre %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @mision.descripcion %>
+</p>
+
+<p>
+  <b>Experiencia:</b>
+  <%= @mision.experiencia %>
+</p>
+
+<p>
+  <b>Oro:</b>
+  <%= @mision.oro %>
+</p>
+
+<p>
+  <b>Repetible:</b>
+  <%= @mision.repetible %>
+</p>
+
+<p>
+  <b>Nivel necesario:</b>
+  <%= @mision.nivel_necesario %>
+</p>
+
+<p>
+  <b>Es principal:</b>
+  <%= @mision.es_principal %>
+</p>
+
+<p>
+  <b>Id locacion:</b>
+  <%= @mision.locacion_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_mision_path(@mision) %> |
+<%= link_to 'Back', misions_path %>

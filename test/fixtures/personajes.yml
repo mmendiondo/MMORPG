@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  usuario_id: 1
+  nombre: MyString
+  ataque: 1
+  defenza: 1
+  nivel: 1
+  experiencia: 1
+  especie: 1
+  familia: MyString
+  oro: 1
+  locacion_id: 1
+  vida: 1
+  vida_perdida: 1
+  tipo: 1
+
+two:
+  usuario_id: 1
+  nombre: MyString
+  ataque: 1
+  defenza: 1
+  nivel: 1
+  experiencia: 1
+  especie: 1
+  familia: MyString
+  oro: 1
+  locacion_id: 1
+  vida: 1
+  vida_perdida: 1
+  tipo: 1

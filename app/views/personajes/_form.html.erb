@@ -1,0 +1,69 @@
+<%= form_for(@personaje) do |f| %>
+  <% if @personaje.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@personaje.errors.count, "error") %> prohibited this personaje from being saved:</h2>
+
+      <ul>
+      <% @personaje.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :usuario_id %><br />
+    <%= f.number_field :usuario_id %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :ataque %><br />
+    <%= f.number_field :ataque %>
+  </div>
+  <div class="field">
+    <%= f.label :defenza %><br />
+    <%= f.number_field :defenza %>
+  </div>
+  <div class="field">
+    <%= f.label :nivel %><br />
+    <%= f.number_field :nivel %>
+  </div>
+  <div class="field">
+    <%= f.label :experiencia %><br />
+    <%= f.number_field :experiencia %>
+  </div>
+  <div class="field">
+    <%= f.label :especie %><br />
+    <%= f.number_field :especie %>
+  </div>
+  <div class="field">
+    <%= f.label :familia %><br />
+    <%= f.text_field :familia %>
+  </div>
+  <div class="field">
+    <%= f.label :oro %><br />
+    <%= f.number_field :oro %>
+  </div>
+  <div class="field">
+    <%= f.label :locacion_id %><br />
+    <%= f.number_field :locacion_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vida %><br />
+    <%= f.number_field :vida %>
+  </div>
+  <div class="field">
+    <%= f.label :vida_perdida %><br />
+    <%= f.number_field :vida_perdida %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.number_field :tipo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

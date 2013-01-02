@@ -1,0 +1,37 @@
+<h1>Listing misions</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th>Experiencia</th>
+    <th>Oro</th>
+    <th>Repetible</th>
+    <th>Nivel necesario</th>
+    <th>Es principal</th>
+    <th>Id locacion</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @misions.each do |mision| %>
+  <tr>
+    <td><%= mision.nombre %></td>
+    <td><%= mision.descripcion %></td>
+    <td><%= mision.experiencia %></td>
+    <td><%= mision.oro %></td>
+    <td><%= mision.repetible %></td>
+    <td><%= mision.nivel_necesario %></td>
+    <td><%= mision.es_principal %></td>
+    <td><%= mision.locacion_id %></td>
+    <td><%= link_to 'Show', mision %></td>
+    <td><%= link_to 'Edit', edit_mision_path(mision) %></td>
+    <td><%= link_to 'Destroy', mision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mision', new_mision_path %>

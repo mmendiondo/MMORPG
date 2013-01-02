@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @item.nombre %>
+</p>
+
+<p>
+  <b>Ataque:</b>
+  <%= @item.ataque %>
+</p>
+
+<p>
+  <b>Defenza:</b>
+  <%= @item.defenza %>
+</p>
+
+<p>
+  <b>Dureza:</b>
+  <%= @item.dureza %>
+</p>
+
+<p>
+  <b>Nivel:</b>
+  <%= @item.nivel %>
+</p>
+
+<p>
+  <b>Especie:</b>
+  <%= @item.especie %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @item.valor %>
+</p>
+
+<p>
+  <b>Imagen:</b>
+  <%= @item.imagen %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

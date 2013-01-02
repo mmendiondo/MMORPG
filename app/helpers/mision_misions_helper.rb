@@ -1,0 +1,2 @@
+module MisionMisionsHelper
+end

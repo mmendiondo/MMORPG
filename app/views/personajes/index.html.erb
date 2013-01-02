@@ -1,0 +1,47 @@
+<h1>Listing personajes</h1>
+
+<table>
+  <tr>
+    <th>Id usuario</th>
+    <th>Nombre</th>
+    <th>Ataque</th>
+    <th>Defenza</th>
+    <th>Nivel</th>
+    <th>Experiencia</th>
+    <th>Especie</th>
+    <th>Familia</th>
+    <th>Oro</th>
+    <th>Id locacion</th>
+    <th>Vida</th>
+    <th>Vida perdida</th>
+    <th>Tipo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @personajes.each do |personaje| %>
+  <tr>
+    <td><%= personaje.usuario_id %></td>
+    <td><%= personaje.nombre %></td>
+    <td><%= personaje.ataque %></td>
+    <td><%= personaje.defenza %></td>
+    <td><%= personaje.nivel %></td>
+    <td><%= personaje.experiencia %></td>
+    <td><%= personaje.especie %></td>
+    <td><%= personaje.familia %></td>
+    <td><%= personaje.oro %></td>
+    <td><%= personaje.locacion_id %></td>
+    <td><%= personaje.vida %></td>
+    <td><%= personaje.vida_perdida %></td>
+    <td><%= personaje.tipo %></td>
+    <td><%= link_to 'Show', personaje %></td>
+    <td><%= link_to 'Edit', edit_personaje_path(personaje) %></td>
+    <td><%= link_to 'Destroy', personaje, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Personaje', new_personaje_path %>

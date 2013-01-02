@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id usuario:</b>
+  <%= @personaje.usuario_id %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @personaje.nombre %>
+</p>
+
+<p>
+  <b>Ataque:</b>
+  <%= @personaje.ataque %>
+</p>
+
+<p>
+  <b>Defenza:</b>
+  <%= @personaje.defenza %>
+</p>
+
+<p>
+  <b>Nivel:</b>
+  <%= @personaje.nivel %>
+</p>
+
+<p>
+  <b>Experiencia:</b>
+  <%= @personaje.experiencia %>
+</p>
+
+<p>
+  <b>Especie:</b>
+  <%= @personaje.especie %>
+</p>
+
+<p>
+  <b>Familia:</b>
+  <%= @personaje.familia %>
+</p>
+
+<p>
+  <b>Oro:</b>
+  <%= @personaje.oro %>
+</p>
+
+<p>
+  <b>Id locacion:</b>
+  <%= @personaje.locacion_id %>
+</p>
+
+<p>
+  <b>Vida:</b>
+  <%= @personaje.vida %>
+</p>
+
+<p>
+  <b>Vida perdida:</b>
+  <%= @personaje.vida_perdida %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @personaje.tipo %>
+</p>
+
+
+<%= link_to 'Edit', edit_personaje_path(@personaje) %> |
+<%= link_to 'Back', personajes_path %>
+
+
+<%= Personaje.first.personaje_misions.first.mision.id %>

@@ -1,0 +1,29 @@
+<%= form_for(@personaje_mision) do |f| %>
+  <% if @personaje_mision.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@personaje_mision.errors.count, "error") %> prohibited this personaje_mision from being saved:</h2>
+
+      <ul>
+      <% @personaje_mision.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :personaje_id %><br />
+    <%= f.text_field :personaje_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mision_id %><br />
+    <%= f.text_field :mision_id %>
+  </div>
+  <div class="field">
+    <%= f.label :finalizada %><br />
+    <%= f.number_field :finalizada %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<h1>Listing personaje_items</h1>
+
+<table>
+  <tr>
+    <th>Id item</th>
+    <th>Id personaje</th>
+    <th>Equipado</th>
+    <th>Danio</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @personaje_items.each do |personaje_item| %>
+  <tr>
+    <td><%= personaje_item.item_id %></td>
+    <td><%= personaje_item.personaje_id %></td>
+    <td><%= personaje_item.equipado %></td>
+    <td><%= personaje_item.danio %></td>
+    <td><%= link_to 'Show', personaje_item %></td>
+    <td><%= link_to 'Edit', edit_personaje_item_path(personaje_item) %></td>
+    <td><%= link_to 'Destroy', personaje_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Personaje item', new_personaje_item_path %>

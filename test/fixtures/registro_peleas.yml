@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  personaje_id: 1
+  personaje_enemigo_id: 1
+  ganador_id: 1
+  perdedor_id: 1
+  danio_ganador: 1
+  danio_perdedor: 1
+
+two:
+  personaje_id: 1
+  personaje_enemigo_id: 1
+  ganador_id: 1
+  perdedor_id: 1
+  danio_ganador: 1
+  danio_perdedor: 1

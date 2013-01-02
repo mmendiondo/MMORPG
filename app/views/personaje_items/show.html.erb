@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id item:</b>
+  <%= @personaje_item.item_id %>
+</p>
+
+<p>
+  <b>Id personaje:</b>
+  <%= @personaje_item.personaje_id %>
+</p>
+
+<p>
+  <b>Equipado:</b>
+  <%= @personaje_item.equipado %>
+</p>
+
+<p>
+  <b>Danio:</b>
+  <%= @personaje_item.danio %>
+</p>
+
+
+<%= link_to 'Edit', edit_personaje_item_path(@personaje_item) %> |
+<%= link_to 'Back', personaje_items_path %>

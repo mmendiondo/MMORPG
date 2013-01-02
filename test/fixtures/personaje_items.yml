@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  item_id: 1
+  personaje_id: 1
+  equipado: 1
+  danio: 1
+
+two:
+  item_id: 1
+  personaje_id: 1
+  equipado: 1
+  danio: 1

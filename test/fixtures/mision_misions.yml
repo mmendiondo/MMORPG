@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mision_id: 1
+  mision_relacionada_id: 1
+
+two:
+  mision_id: 1
+  mision_relacionada_id: 1

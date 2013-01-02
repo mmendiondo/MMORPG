@@ -1,0 +1,27 @@
+<h1>Listing personaje_misions</h1>
+
+<table>
+  <tr>
+    <th>Id personaje</th>
+    <th>Id mision</th>
+    <th>Finalizada</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @personaje_misions.each do |personaje_mision| %>
+  <tr>
+    <td><%= personaje_mision.personaje_id %></td>
+    <td><%= personaje_mision.mision_id %></td>
+    <td><%= personaje_mision.finalizada %></td>
+    <td><%= link_to 'Show', personaje_mision %></td>
+    <td><%= link_to 'Edit', edit_personaje_mision_path(personaje_mision) %></td>
+    <td><%= link_to 'Destroy', personaje_mision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Personaje mision', new_personaje_mision_path %>

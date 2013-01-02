@@ -1,0 +1,27 @@
+<h1>Listing tipo_personajes</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th>Imagen</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tipo_personajes.each do |tipo_personaje| %>
+  <tr>
+    <td><%= tipo_personaje.nombre %></td>
+    <td><%= tipo_personaje.descripcion %></td>
+    <td><%= tipo_personaje.imagen %></td>
+    <td><%= link_to 'Show', tipo_personaje %></td>
+    <td><%= link_to 'Edit', edit_tipo_personaje_path(tipo_personaje) %></td>
+    <td><%= link_to 'Destroy', tipo_personaje, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tipo personaje', new_tipo_personaje_path %>

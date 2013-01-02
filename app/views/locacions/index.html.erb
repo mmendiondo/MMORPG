@@ -1,0 +1,27 @@
+<h1>Listing locacions</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Imagen</th>
+    <th>Distancia</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @locacions.each do |locacion| %>
+  <tr>
+    <td><%= locacion.nombre %></td>
+    <td><%= locacion.imagen %></td>
+    <td><%= locacion.distancia %></td>
+    <td><%= link_to 'Show', locacion %></td>
+    <td><%= link_to 'Edit', edit_locacion_path(locacion) %></td>
+    <td><%= link_to 'Destroy', locacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Locacion', new_locacion_path %>
